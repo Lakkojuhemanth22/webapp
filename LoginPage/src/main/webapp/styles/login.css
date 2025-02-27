@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #b9c8e1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.auth-wrapper {
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background: #fff;
+}
+
+.form-container {
+    width: 60%;
+    padding: 40px;
+}
+
+.form-card {
+    display: none;
+}
+
+.form-card.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #aaa;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn_emp{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(32, 160, 41);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn_emp:hover{
+    background: rgb(13, 81, 17)
+}
+
+.toggle-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.toggle-text button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle-text button:hover {
+    color: #0056b3;
+}
+
+.social-auth-container {
+    width: 40%;
+    padding: 40px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ddd;
+}
+
+.social-auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.social-btn .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.google {
+    background: #db4437; /* Google red */
+}
+
+.google:hover {
+    background: #c1351d;
+}
+
+.github {
+    background: #333; /* GitHub dark */
+}
+
+.github:hover {
+    background: #444;
+}
+
+.linkedin {
+    background: #0077b5; /* LinkedIn blue */
+}
+
+.linkedin:hover {
+    background: #005582;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .auth-wrapper {
+        flex-direction: column;
+    }
+
+    .form-container, .social-auth-container {
+        width: 100%;
+    }
+
+    .form-card {
+        margin-bottom: 20px;
+    }
+}
